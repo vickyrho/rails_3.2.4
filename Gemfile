@@ -54,6 +54,7 @@ gem 'bcrypt-ruby', '3.0.1'
 group :test do
   gem 'capybara', '1.1.2'
   gem 'test-unit'
+  gem 'factory_girl_rails', '4.1.0'
 end
 
 group :production do
