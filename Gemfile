@@ -12,6 +12,7 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
 end
 
+gem 'rake', '< 11.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -38,6 +39,16 @@ gem 'jquery-rails'
 
 gem 'bootstrap-sass', '2.1'
 
+group :development do
+  gem 'annotate', '2.5.0'
+end
+
+gem 'bcrypt-ruby', '3.0.1'
+gem 'faker', '1.0.1'
+
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
+
 # Deploy with Capistrano
 # gem 'capistrano'
 
@@ -46,8 +57,12 @@ gem 'bootstrap-sass', '2.1'
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'test-unit'
+  gem 'factory_girl_rails', '4.1.0'
 end
+
 
 group :production do
   gem 'pg', '0.12.2'
 end
+
